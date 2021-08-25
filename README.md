@@ -24,6 +24,21 @@ _Eventually, all dependencies should become optional_
   
   If you don't have this, you can still use _wifiqr_, but you'll have to provide all arguments (the name, password and "WPA" or "WEP")
 
+## Installation
+
+0. Make sure your current shell is _fish_:
+   ```shell
+   $ echo $SHELL
+   /usr/bin/fish
+   ```
+1. Install `qrcode` and put the qrwifi function in your fish config:
+   ```shell
+   $ go install github.com/skip2/go-qrcode/qrcode@latest
+   $ git clone https://github.com/ewen-lbh/wifiqr
+   $ cp wifiqr/wifiqr.fish ~/.config/fish/functions/
+   $ rm -rf wifiqr
+   ```
+
 ## Usage
 
 ```
